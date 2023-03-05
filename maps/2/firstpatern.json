@@ -1,0 +1,217 @@
+{
+    "map_name": "Night MGE brothers",
+    "author_map": "Vitapasser",
+    "author_music": "Vitapasser",
+    "path_to_music": "https://drive.google.com/file/d/1lk094HFSImw0Nj4K7ZxUEg9HV5p7nWRi/view?usp=share_link",
+    "path_to_background": "https://preview.redd.it/mge-brother-v0-6a5gtcdcxq8a1.jpg?auto=webp&s=f6c32c97049039f406ca9c144f95c4d77b840da0",
+    "patern": [
+        {
+            "key_id": "KeyB",
+            "literal_id": 98,
+            "key_to_appear_after_last_key": 1000,
+            "key_time_live": 5200,
+            "key_get_score_for_press": {
+                "p300": {
+                    "take_away_points": 0,
+                    "score_diapasone": [
+                        {
+                            "min": 3000,
+                            "max": 5000
+                        }
+                    ]
+                },
+                "p100": {
+                    "take_away_points": 200,
+                    "score_diapasone": [
+                        {
+                            "min": 1500,
+                            "max": 2999
+                        },
+                        {
+                            "min": 5001,
+                            "max": 5100
+                        }
+                    ]
+                },
+                "p50": {
+                    "take_away_points": 250,
+                    "score_diapasone": [
+                        {
+                            "min": 0,
+                            "max": 1499
+                        },
+                        {
+                            "min": 5101,
+                            "max": 5200
+                        }
+                    ]
+                },
+                "other": {
+                    "take_away_points": 300,
+                    "score_diapasone": [
+                        {
+                            "min": 5201,
+                            "max": 5300
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key_id": "KeyB",
+            "literal_id": 98,
+            "key_to_appear_after_last_key": 3000,
+            "key_time_live": 5200,
+            "key_get_score_for_press": {
+                "p300": {
+                    "take_away_points": 0,
+                    "score_diapasone": [
+                        {
+                            "min": 3000,
+                            "max": 5000
+                        }
+                    ]
+                },
+                "p100": {
+                    "take_away_points": 200,
+                    "score_diapasone": [
+                        {
+                            "min": 1500,
+                            "max": 2999
+                        },
+                        {
+                            "min": 5001,
+                            "max": 5100
+                        }
+                    ]
+                },
+                "p50": {
+                    "take_away_points": 250,
+                    "score_diapasone": [
+                        {
+                            "min": 0,
+                            "max": 1499
+                        },
+                        {
+                            "min": 5101,
+                            "max": 5200
+                        }
+                    ]
+                },
+                "other": {
+                    "take_away_points": 300,
+                    "score_diapasone": [
+                        {
+                            "min": 5201,
+                            "max": 5300
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key_id": "KeyC",
+            "literal_id": 99,
+            "key_to_appear_after_last_key": 1000,
+            "key_time_live": 5200,
+            "key_get_score_for_press": {
+                "p300": {
+                    "take_away_points": 0,
+                    "score_diapasone": [
+                        {
+                            "min": 3000,
+                            "max": 5000
+                        }
+                    ]
+                },
+                "p100": {
+                    "take_away_points": 200,
+                    "score_diapasone": [
+                        {
+                            "min": 1500,
+                            "max": 2999
+                        },
+                        {
+                            "min": 5001,
+                            "max": 5100
+                        }
+                    ]
+                },
+                "p50": {
+                    "take_away_points": 250,
+                    "score_diapasone": [
+                        {
+                            "min": 0,
+                            "max": 1499
+                        },
+                        {
+                            "min": 5101,
+                            "max": 5200
+                        }
+                    ]
+                },
+                "other": {
+                    "take_away_points": 300,
+                    "score_diapasone": [
+                        {
+                            "min": 5201,
+                            "max": 5300
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key_id": "KeyZ",
+            "literal_id": 122,
+            "key_to_appear_after_last_key": 1000,
+            "key_time_live": 3200,
+            "key_get_score_for_press": {
+                "p300": {
+                    "take_away_points": 0,
+                    "score_diapasone": [
+                        {
+                            "min": 1800,
+                            "max": 2500
+                        }
+                    ]
+                },
+                "p100": {
+                    "take_away_points": 200,
+                    "score_diapasone": [
+                        {
+                            "min": 2501,
+                            "max": 3000
+                        },
+                        {
+                            "min": 5001,
+                            "max": 5100
+                        }
+                    ]
+                },
+                "p50": {
+                    "take_away_points": 250,
+                    "score_diapasone": [
+                        {
+                            "min": 0,
+                            "max": 399
+                        },
+                        {
+                            "min": 3001,
+                            "max": 3200
+                        }
+                    ]
+                },
+                "other": {
+                    "take_away_points": 300,
+                    "score_diapasone": [
+                        {
+                            "min": 3201,
+                            "max": 3300
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
