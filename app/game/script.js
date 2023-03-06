@@ -261,6 +261,9 @@ async function main(map = undefined) {
         document.getElementById("game").style.backgroundImage = `url("` + paternMap.path_to_background + `")`;
         
         let audio = new Audio(paternMap.path_to_music);
+
+        audio.play();
+        setTimeout((audio)=>{audio.pause()}, 100, audio);
         setTimeout(game, 10000, audio);
     }
 
