@@ -84,6 +84,7 @@ async function main(map = undefined) {
                     player.set_score(player.get_score() - paternMap.patern[0].key_get_score_for_press.other.take_away_points);
                     outputEndLiteral(listener.literal, listener.id, listener.is_end_exist_literal, listener.audio);
                 }
+                outputScore();
             });
             document.addEventListener('keyup', function(event) {
                 KeyboardInput.to_key_unpress();
@@ -104,7 +105,7 @@ async function main(map = undefined) {
 
 
     function outputLiteral(literal, id, point, not_point, up_or_down, procent_opacity, is_end_exist_literal, audio, eventListener) {
-        outputScore()
+        outputScore();
         setTimeout((literal, id)=>{
             if(!is_end_exist_literal.is_end_exist) {
                 document.getElementById(id).style.opacity = procent_opacity;
@@ -155,7 +156,11 @@ async function main(map = undefined) {
         const literal_element = document.createElement("div");
         literal_element.id = id;
 
-        const node = document.createTextNode(String.fromCharCode(literal.literal_id));
+        let printLiteral;
+        if (typeof literal.literal_id === 'number') { printLiteral = String.fromCharCode(literal.literal_id);} 
+        else { printLiteral = literal.literal_id}
+
+        const node = document.createTextNode(printLiteral);
         
 
         literal_element.appendChild(node);
@@ -180,10 +185,17 @@ async function main(map = undefined) {
         if((paternMap.patern.length - 1) == id) audio.pause();
     }
 
-
+    function firstOutputScore() {
+        player.score = 0;
+        player.can_max_score = 1;
+        outputScore();
+        player.score = 0;
+        player.can_max_score = 0;
+    }
 
     function game(audio){
         document.getElementById("title_div").style.display = "none";
+        firstOutputScore();
         audio.play();
         document.getElementById("output").innerHTML = "";
         let to_start_time = 0;
