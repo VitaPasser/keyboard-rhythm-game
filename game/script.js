@@ -4,7 +4,7 @@ async function main(map = undefined) {
     let paternMap = map;
     
     if(map == undefined){
-        const response = await fetch("/1/firstpatern.json");
+        const response = await fetch("../maps/1/firstpatern.json");
         paternMap = await response.json();
     } else {
         if(map.path_to_music.indexOf("https://drive.google.com") != -1) {
