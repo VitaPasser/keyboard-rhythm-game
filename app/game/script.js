@@ -100,6 +100,7 @@ async function main(map = undefined) {
     }
 
     function outputScore() {
+        if(player.get_score() < 0) player.get_score() = 0;
         document.getElementById("score").innerHTML = player.get_score() + " - " + (player.get_score() / (player.can_max_score) * 100).toFixed(2) + "%";
     }
 
