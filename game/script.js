@@ -6,8 +6,8 @@ async function main(map = undefined) {
     if(map == undefined){
         const response = await fetch("../maps/1/firstpatern.json");
         paternMap = await response.json();
-        paternMap.path_to_music = "../maps" + paternMap.path_to_music;
-        paternMap.path_to_background = "../maps" + paternMap.path_to_background;
+        paternMap.path_to_music = "../maps/" + paternMap.path_to_music;
+        paternMap.path_to_background = "../maps/" + paternMap.path_to_background;
     } else {
         if(map.path_to_music.indexOf("https://drive.google.com") != -1) {
             var res = map.path_to_music.match(/https:\/\/drive.google.com\/file\/d\/([a-zA-Z0-9_]+)\//)
